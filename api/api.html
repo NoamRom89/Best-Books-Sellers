@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>BSB - API</title>
+</head>
+<body>
+<div id="wrapper">
+    <h1>Best Sellers Books - API specification</h1><br><br>
+    <p>This is a web service for third-party who want to use the Best-Sellers-Books app.</p><br>
+    <p>In this app we will use Node js for the basic functionality.</p><br>
+    <p>First thing we will need to do is to make the server (server.js) running...</p><br>
+    <table id="table">
+        <tr id="bold">
+            <td>URL</td>
+            <td>Description</td>
+            <td>Example</td>
+        </tr>
+        <tr>
+            <td>best-books-sellers.herokuapp.com </td>
+            <td>Showing all the best sellers books by Json objects</td>
+            <td>{
+                Name: "Ronaldo",
+                year: "1989",
+                BSMonth: "March"
+                },{...},{...}..</td>
+        </tr>
+        <tr>
+            <td>best-books-sellers.herokuapp.com/name/BOOKID</td>
+            <td>Showing the requested book with the specific name of it (BOOKID)</td>
+            <td>{
+                Name: "Ronaldo",
+                year: "1989",
+                BSMonth: "March"
+                }</td>
+        </tr>
+        <tr>
+            <td>best-books-sellers.herokuapp.com/BSForMonth/bookmonth</td>
+            <td>Showing array of books with the requested month of them/it (bookmonth)</td>
+            <td>{
+                Name: "Gerrard",
+                year: "2010",
+                BSMonth: "June"
+                },
+                {
+                Name: "Zidan",
+                year: "2011",
+                BSMonth: "June"
+                }</td>
+        </tr>
+    </table>
+</div>
+</body>
+</html>

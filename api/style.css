@@ -1,0 +1,26 @@
+*{
+    padding: 0px;
+    margin: 0px;
+
+}
+header,main,footer,aside,nav,article,section{
+    display: block;
+}
+#wrapper{
+    position: relative;
+    height: 179.0625%;
+    width: 90%;
+    margin: 0 auto;
+    font-family: sans-serif;
+}
+p{
+    font-size: 22px;
+}
+#table,td,th{
+    border: 1px solid black;
+}
+#bold > td {
+    font-size: 20px;
+    font-family: sans-serif;
+    color: red;
+}
