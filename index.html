@@ -43,12 +43,12 @@ function remove(){
   console.log("Removing an item from cart - before");
   window._cshq = window._cshq || [];   // always confirm that the events queue exists, or create it
 
-  window._cshq.push(["_removeFromCart",    // remove the product
-     {
-        "ProductId" : "sku156",
-        "Quantity" : "1"
-     }
-  ]);
+window._cshq.push(["_removeFromCart",    // remove the product
+   {
+      "ProductId" : "sku156",
+      "Quantity" : "1"
+   }
+]);
   
   console.log("Removing an item from cart - After");
 }
