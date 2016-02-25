@@ -21,36 +21,33 @@
 })();
 
 <!-- Add product to cart -->
-// function add(){
-//   window._cshq = window._cshq || [];   // always confirm that the events queue exists, or create it
+function add(){
+  window._cshq = window._cshq || [];   // always confirm that the events queue exists, or create it
 
-//   window._cshq.push(["_addToCart",    // add the product
-//   {
-//       "ProductId" : "sku156",
-//       "Quantity" : "1",
-//       "UnitPrice" : "24.50",
-//       "Denomination" : "USD",
-//       "Name" : "Riders Cap",
-//       "Category" : "Sport Accessories",
-//       "Variation" : "Dark Grey"
-//   }
-//   ]);
-// };
+  window._cshq.push(["_addToCart",    // add the product
+  {
+      "ProductId" : "sku156",
+      "Quantity" : "1",
+      "UnitPrice" : "24.50",
+      "Denomination" : "USD",
+      "Name" : "Riders Cap",
+      "Category" : "Sport Accessories",
+      "Variation" : "Dark Grey"
+  }
+  ]);
+};
 
 
 <!-- Remove product from cart -->
-function remove(){
-  console.log("Removing an item from cart - before");
-//   window._cshq = window._cshq || [];   // always confirm that the events queue exists, or create it
+function add1(){
+  window._cshq = window._cshq || [];   // always confirm that the events queue exists, or create it
 
-// window._cshq.push(["_removeFromCart",    // remove the product
-//   {
-//       "ProductId" : "sku156",
-//       "Quantity" : "1"
-//   }
-// ]);
-  
-  console.log("Removing an item from cart - After");
+window._cshq.push(["_removeFromCart",    // remove the product
+   {
+      "ProductId" : "sku156",
+      "Quantity" : "1"
+   }
+]);
 }
 
 <!-- end CS -->
@@ -82,7 +79,7 @@ function remove(){
 
 <p><button type="button" onClick="add()">Add!</button></p>
 
-<p><button type="button" onClick="remove()">Remove!</button></p>
+<p><button type="button" onClick="Remove()">add1!</button></p>
 
 <p><button type="button">Clear!</button></p>
 
