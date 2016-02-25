@@ -20,17 +20,36 @@
     document.getElementsByTagName('head')[0].appendChild(script);
 })();
 </script>
+
+<!-- Add product to cart -->
+function add(){
+  window._cshq = window._cshq || [];   // always confirm that the events queue exists, or create it
+
+  window._cshq.push(["_addToCart",    // add the product
+   {
+      "ProductId" : sku156,
+      "Quantity" : "1",
+      "UnitPrice" : "24.50",
+      "Denomination" : "USD"
+   }
+  ]);
+}
+
+
+<!-- Remove product to cart -->
+function remove(){
+  
+  window._cshq = window._cshq || [];   // always confirm that the events queue exists, or create it
+
+  window._cshq.push(["_removeFromCart",    // remove the product
+     {
+        "ProductId" : sku156,
+        "Quantity" : "1"
+     }
+  ]);
+}
+
 <!-- end CS -->
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -60,9 +79,9 @@
   <input type="submit" value="Submit">
 </form> 
 
-<button type="button">Add!</button>
+<button type="button" onClick="add()">Add!</button>
 
-<button type="button">Remove!</button>
+<button type="button" onClick="remove()">Remove!</button>
 
 <button type="button">Clear!</button>
 
